@@ -1,0 +1,17 @@
+{% extends 'myproj2/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ status }}
+        {{ form.as_p }}
+        <button class="btn btn-warning">Войти</button><br>
+        <a href="{% url 'creat_in' %}"><p class="btn btn-danger">Регистрация</p></a>
+    </form><br>
+
+{% endblock %}

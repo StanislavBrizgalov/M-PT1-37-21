@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'myproj2/css/style.css' %}">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/">
+                <span class="logo">Lion</span>
+                <img class="img" src="{% static 'myproj2/img/img.jpg' %}" alt="raccoon">
+            </a>
+            <ul class="spisok">
+                <li>{% if user.is_authenticated %}
+                        <p><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>Выйти</a></p>
+                    {% else %}
+                        <a href="{% url 'login' %}"><i class="fas fa-sign-out-alt"></i>Войти</a></li>
+                    {% endif %}
+                <li><a href="{% url 'about' %}"><i class="fab fa-phoenix-squadron"></i>Про нас</a></li>
+                <li><a href="{% url 'home' %}"><i class="fas fa-home"></i>Главная</a></li>
+            </ul>
+            <hr>
+          </div>
+    </header>
+    <main>
+        {% if user.is_authenticated %}
+            <p>Hi {{ user.username }}!</p>
+            {% endif %}
+        {% block content %}{% endblock %}
+    </main>
+        
+</body>
+</html>

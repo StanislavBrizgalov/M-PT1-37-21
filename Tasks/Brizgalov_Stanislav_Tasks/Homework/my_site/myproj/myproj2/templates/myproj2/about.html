@@ -1,0 +1,19 @@
+{% extends 'myproj2/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h1>Контакты</h1>
+        <p>Адрес: г. Минск, ул. Корженевского, 12а-108 (КУРАСОВЩИНА)<br><br>
+            Телефон: +375 (29/33) 659-50-50<br><br>
+            Email: rentstroi2018 @ mail.ru<br><br>
+            УНП: 192 426 322<br><br>
+            График работы:<br>
+            понедельник- пятница:    9.00-19.00<br>
+            суббота-воскресенье:      9.00-15.00 </p><br>
+        <a href="{% url 'home' %}"><button class="btn btn-warning">На главную страницу</button></a>
+    </div>
+{% endblock %}

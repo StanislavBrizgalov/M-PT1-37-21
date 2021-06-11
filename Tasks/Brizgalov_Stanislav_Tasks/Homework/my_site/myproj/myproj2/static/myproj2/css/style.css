@@ -1,0 +1,82 @@
+body {
+    background: #2c2c2c;
+
+}
+
+header {
+    background: #181818;
+}
+
+
+main {
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    margin: 30px 50px;
+
+}
+main h1{font-size: 50px;}
+
+
+
+.img{
+    width: 100px;
+    float: left;
+    border-radius: 100px;
+    border: 3px solid green;
+    box-shadow: 0 0 7px #666;
+}
+
+
+.logo{
+    font-size: 60px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -3px;
+    color: #fff;
+}
+
+
+ul.spisok li {
+    width: 15%;
+    list-style-type: none;
+    padding: 3px;
+    float: right;
+    margin-top: -50px;
+    transition: transform .3s ease;
+    margin-bottom: 3rem;
+    color: green;
+}
+div ul li:hover, div ul a:hover{
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+hr {
+border: 2px solid green;
+
+ }
+
+.forms {
+    text-align: right;
+    margin-right: 500px;
+}
+.helptext{}
+
+
+.containers{
+    text-align: center;
+    color: #ffc107;
+    background-color: #2F4F4F;
+    border-color: #fff;
+    border-radius: .25rem;
+    border: 8px double black;
+    height: 300px;
+}
+.icon{
+    float: left;
+    width:400px;
+    height: 280px;
+}
