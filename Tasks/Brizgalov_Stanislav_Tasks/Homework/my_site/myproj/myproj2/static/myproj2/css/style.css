@@ -1,82 +1,93 @@
+
 body {
-    background: #2c2c2c;
-
-}
-
-header {
-    background: #181818;
+    background: #778899;
 }
 
 
-main {
-    color: #fff;
-    margin-top: 50px;
-    text-align: center;
-    margin: 30px 50px;
+.conntent h1{font-size: 30px;}
+.conntent h2{margin-left: -88px; text-align: center;}
 
+.conntent {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+    color: #E6E6FA;
+    margin: 0px 20px;
+    font-size: 15px;
+    width: 100%;
 }
-main h1{font-size: 50px;}
-
 
 
 .img{
-    width: 100px;
-    float: left;
+    width: 45px;
     border-radius: 100px;
-    border: 3px solid green;
-    box-shadow: 0 0 7px #666;
+    border: 2px solid white;
+    box-shadow: 0 0 30px #6ef;
 }
 
 
-.logo{
-    font-size: 60px;
-    margin-left: 10px;
-    font-weight: bold;
-    position: relative;
-    top: -3px;
-    color: #fff;
-}
 
 
-ul.spisok li {
-    width: 15%;
-    list-style-type: none;
-    padding: 3px;
-    float: right;
-    margin-top: -50px;
-    transition: transform .3s ease;
-    margin-bottom: 3rem;
-    color: green;
-}
-div ul li:hover, div ul a:hover{
-    color: #fff;
+div a:hover, div img{
+    color: red;
     text-decoration: none;
     transform: scale(1.05);
+    transition: transform .3s ease;
 }
 
-hr {
-border: 2px solid green;
-
- }
-
-.forms {
-    text-align: right;
-    margin-right: 500px;
+.catalog{
+    margin: 10px
 }
-.helptext{}
+
+.menu{
+    float: left;
+    width: 230px;
+    height: 200px;
+    margin: 20px;
+    padding: 0px;
+
+}
+
+.menu img{
+    width: 230px;
+    height: 200px;
+}
 
 
-.containers{
-    text-align: center;
+
+/*.containers{
+    float: left;
+    width: 500px;
     color: #ffc107;
     background-color: #2F4F4F;
     border-color: #fff;
-    border-radius: .25rem;
+    border-radius: 1.25rem;
     border: 8px double black;
-    height: 300px;
+    height: 247px;
+    margin-top: 10px;
+}*/
+
+.foto {
+    width: 93%;
+    margin: 50px 0px 50px 40px;
+    left: 0;
+    top: 0;
+
 }
-.icon{
-    float: left;
-    width:400px;
-    height: 280px;
+
+.footer {
+    left: 0;
+    bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #8A2BE2; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1150px;
 }
+
+.icon {
+    width: 100%;
+}
+
